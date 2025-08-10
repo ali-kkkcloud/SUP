@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <h1>Employee Management System</h1>
+
+  <div id="auth">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <button id="signupBtn">Sign Up</button>
+  </div>
+  <div id="user-info" style="display:none;">
+    <p>Welcome, <span id="user-email"></span>!</p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <div id="employee-section" style="display:none;">
+    <h2>Add Employee</h2>
+    <input type="text" id="employee-name" placeholder="Name">
+    <input type="email" id="employee-email" placeholder="Email">
+    <input type="text" id="employee-position" placeholder="Position">
+    <button id="addEmployeeBtn">Add Employee</button>
+
+    <h2>Employee List</h2>
+    <ul id="employee-list"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
